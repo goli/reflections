@@ -1,0 +1,4 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+The amazing capabilities of git in managing repositories are used when we are collaborating
+with a group of people to work on a project, using the internet.https://github.com/goli/reflections
