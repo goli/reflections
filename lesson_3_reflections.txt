@@ -1,4 +1,44 @@
 When would you want to use a remote repository rather than keeping all your work local?
 
 The amazing capabilities of git in managing repositories are used when we are collaborating
-with a group of people to work on a project, using the internet.https://github.com/goli/reflections
+with a group of people to work on a project, using the internet.
+
+Why might you want to always pull changes manually rather than having Git automatically 
+stay up-to-date with your remote repository?
+
+I may get a file from a repository and change it for a purpose. If pull command runs 
+automatically, it is very likely that a conflict occurs, as the remote version of the file
+is merged with my local version each time. Therefore it seems plausible that the pull
+command be manual so that I can control the situation and fix the conflicts.
+
+Describe the differences between forks, clones, and branches. When would you use one instead 
+of another?
+
+Fork is a feature specific to GitHub, and creates a copy of the reository on the GitHub
+servers. Clone is the git tool for copying repositories, and at the same time, sets the 
+copied repository as the remote repo for the new one.
+Branches are the labels for commits in one repository.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+THis way each user has the latest status of the remote locally. This satus can be compared to
+the current status of the remote, to determine wheather or not other users have commited any
+changes to the repository or not.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would 
+be harder?
+
+Probably there should be a main copy of the project somewhere on the web, and any contributor
+who wants to update it, should discuss their changes and its aftereffects with others beforehand,
+inside a chatroom for example. And after any update other contributors should be informed to
+update their version.
+This way a lot of time would be spent on such discussions so that all members agree on a change.
+
+When would you want to make changes in a separate branch rather than directly in master? What 
+benefits does each approach have?
+
+I think for developing a new feature or working on a bug, it is a good idea to create a separate
+branch. Then a pull request can be made after the feature is complete and working, or after the 
+bug is fixed. Commiting to the master branch is only plausible for small changes that surely won't
+break the code, like fixing typos and syntax errors.
+
